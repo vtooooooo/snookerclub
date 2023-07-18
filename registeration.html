@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snooker Club Homepage</title>
+  
+  <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border: #333;
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    h4{
+      color: black;
+    }
+    
+    nav {
+      background-color: #444;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    
+    nav li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+    }
+    
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+
+    
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./assets/logo.jpeg" width="150" height="150" class="d-inline-block align-top" alt="">
+    <br>
+    <br>
+    <h1>THE QUE CLUB - SNOOKER POINT</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="./homepage.html">Home</a></li>
+      <li><a href="./login.html">Login</a></li>
+      <li><a href="./events.html">Events</a></li>
+      <li><a href="./membership.html">Membership</a></li>
+      <li><a href="./comforum.html">Forum</a></li>
+      <li><a href="./gallery.html">Gallery</a></li>
+      <li><a href="./contactus.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h2>Snooker Event Registration</h2>
+  <form action="submit.php" method="post">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="experience">Snooker Experience:</label>
+      <select id="experience" name="experience" required>
+        <option value="">Select</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="membership">Club Membership:</label>
+      <input type="radio" id="membership" name="membership" value="yes" required> Yes
+      <input type="radio" id="membership" name="membership" value="no" required> No
+    </div>
+    <button type="submit">Register</button>
+  </form>
+
+  <footer>
+    <p>&copy; The Que Club. All rights reserved.</p>
+    <i class="bi bi-telephone"></i>
+    <a href="tel:7483041793">7483298816</a> / <a href="tel:9739193739">9739193739</a>
+    <br>
+    <i class="bi bi-envelope"></i>
+    <a href="mailto:thequeclubrrnagar@gmail.com">thequeclubrrnagar@gmail.com</a>
+  </footer>
+</body>
+</html>

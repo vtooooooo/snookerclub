@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snooker Club Homepage</title>
+  
+  <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border: #333;
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    h4{
+      color: black;
+    }
+    
+    nav {
+      background-color: #444;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    
+    nav li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+    }
+    
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Reset some default styles */
+body, h1, h2, th, td, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.calendar {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.prev-month,
+.next-month {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-table th,
+.calendar-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.prev-month-day,
+.next-month-day {
+  color: #999;
+}
+
+.free {
+  background-color: #aaffaa;
+}
+
+.reserved {
+  background-color: #ffaaaa;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+
+    
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./assets/logo.jpeg" width="150" height="150" class="d-inline-block align-top" alt="">
+    <br>
+    <br>
+    <h1>THE QUE CLUB - SNOOKER POINT</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="./homepage.html">Home</a></li>
+      <li><a href="./login.html">Login</a></li>
+      <li><a href="./events.html">Events</a></li>
+      <li><a href="./comforum.html">Forum</a></li>
+      <li><a href="./membership.html">Membership</a></li>
+      <li><a href="./gallery.html">Gallery</a></li>
+      <li><a href="./contactus.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Snooker Table Reservation</h2>
+    <div class="calendar">
+      <div class="calendar-header">
+        <div class="prev-month">&lt;</div>
+        <div class="current-month">June 2023</div>
+        <div class="next-month">&gt;</div>
+      </div>
+      <table class="calendar-table">
+        <thead>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="prev-month-day">30</td>
+            <td class="prev-month-day">31</td>
+            <td class="reserved">1</td>
+            <td class="reserved">2</td>
+            <td class="free">3</td>
+            <td class="free">4</td>
+            <td class="free">5</td>
+          </tr>
+          <tr>
+            <td class="free">6</td>
+            <td class="reserved">7</td>
+            <td class="reserved">8</td>
+            <td class="reserved">9</td>
+            <td class="reserved">10</td>
+            <td class="free">11</td>
+            <td class="free">12</td>
+          </tr>
+          <tr>
+            <td class="free">13</td>
+            <td class="free">14</td>
+            <td class="free">15</td>
+            <td class="reserved">16</td>
+            <td class="reserved">17</td>
+            <td class="free">18</td>
+            <td class="free">19</td>
+          </tr>
+          <tr>
+            <td class="reserved">20</td>
+            <td class="free">21</td>
+            <td class="free">22</td>
+            <td class="reserved">23</td>
+            <td class="reserved">24</td>
+            <td class="free">25</td>
+            <td class="reserved">26</td>
+          </tr>
+          <tr>
+            <td class="reserved">27</td>
+            <td class="free">28</td>
+            <td class="reserved">29</td>
+            <td class="reserved">30</td>
+            <td class="next-month-day">1</td>
+            <td class="next-month-day">2</td>
+            <td class="next-month-day">3</td>
+
+          </tr>
+          
+          <!-- Add more rows for the remaining days of the month -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; The Que Club. All rights reserved.</p>
+    <i class="bi bi-telephone"></i>
+    <a href="tel:7483041793">7483298816</a> / <a href="tel:9739193739">9739193739</a>
+    <br>
+    <i class="bi bi-envelope"></i>
+    <a href="mailto:thequeclubrrnagar@gmail.com">thequeclubrrnagar@gmail.com</a>
+  </footer>
+</body>
+</html>
